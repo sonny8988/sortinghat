@@ -1,0 +1,13 @@
+---
+applications:
+  .:
+    name: purchase-sort
+    url: ${name}.${target-base}
+    framework:
+      name: php
+      info:
+        mem: 512M
+        description: PHP Application
+        exec: 
+    mem: 512M
+    instances: 1

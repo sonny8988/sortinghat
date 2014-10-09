@@ -20,7 +20,7 @@
 			</div>
 			<div class="text-center">
 				<div class="user-head" ng-repeat="user in users" ng-click="showUserTeam(user)" >
-					<img class ="img-circle" ng-class="{'red-border':user.showTeam, 'grey-border': !user.showTeam }" src="http://robohash.org/{{user.name}}?size=100x100">
+					<img class ="img-circle" ng-class="{'red-border':user.showTeam, 'grey-border': !user.showTeam }" src="{{userImage(user)}}">
 					<p class="text-center">{{user.name}}</p>
 				</div>
 			</div>			
@@ -31,7 +31,7 @@
 				<h1 class="text-center">Blue Team</h1>
 				<div class="text-center">
 					<div class="user-head" ng-repeat="user in blueTeam" ng-if="user.showTeam" >
-						<img class="img-circle grey-border" src="http://robohash.org/{{user.name}}?size=100x100">
+						<img class="img-circle grey-border" src="{{userImage(user)}}">
 						<p class="text-center">{{user.name}}</p>
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 				<h1 class="text-center">Red Team</h1>
 				<div class="text-center">
 					<div class="user-head" ng-repeat="user in redTeam" ng-if="user.showTeam">
-						<img class="img-circle grey-border" src="http://robohash.org/{{user.name}}?size=100x100"">
+						<img class="img-circle grey-border" src="{{userImage(user)}}">
 						<p class="text-center">{{user.name}}</p>
 					</div>
 				</div>
